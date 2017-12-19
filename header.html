@@ -1,15 +1,57 @@
 <html>
-  <head>
-  </head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="yes” name="apple-mobile-web-app-capable" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0;" name="viewport" />
+		<style type="text/css">
+			html,body,.top{
+				padding: 0;
+				margin:0;
+				color: #fff;
+				height: 100%;
+				width: 100%;
+				background: #d83c40;
 
-  <body bgcolor="rgb(0,0,0)">
-    <div>
-      <p align="center">
-	<font color="red">
-	  This is header test.
-	</font>
-      </p>
-    </div>
-  </body>
-
+			}
+			.top{			}
+			.top span{
+				height: 100%;
+				display: block;
+				float: left;
+				padding: 0;
+				margin:0;
+				align-items:center;
+				display:-webkit-flex;
+				justify-content:center;
+			}
+			.top .logo{
+				width: 20%;
+				text-align: center;
+			}
+			.top .search{
+				width: 70%;
+			}
+			.top .search input{
+				height: 80%;
+				width: 100%;
+				border-radius: 10em;
+				border:0;
+				outline: none;
+				font-size: 16px
+			}
+			.top .history{
+				width: 10%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<span class="logo">测试</span>
+			<span class="search"><input type="text"></span>
+			<span class="history">历史</span>
+		</div>
+	</body>
 </html>
+<script>
+	// alert(document.documentElement.clientHeight)
+</script>
